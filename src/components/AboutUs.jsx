@@ -12,35 +12,59 @@ const whyChooseUs = [
 export default function AboutUs() {
   return (
     <section className="py-24 px-6 bg-black">
-      {/* WIDER CONTAINER */}
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 lg:gap-24 items-start">
 
-        {/* LEFT: Why Choose Us Title */}
+        {/* === LEFT: Title - Slide In from Left === */}
         <motion.div
-          initial={{ x: -50, opacity: 0 }}
+          initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ 
+            duration: 0.8, 
+            ease: "easeOut",
+            delay: 0.1 
+          }}
           className="space-y-8"
         >
-          <div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 mt-10 py-5 text-white leading-tight">
-              We Don’t Design.<br />We Deliver Results.
-            </h2>
-          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 mt-10 py-5 text-white leading-tight">
+            We Don’t Design.<br />We Deliver Results.
+          </h2>
         </motion.div>
-      
-        {/* RIGHT: 4 Why Choose Us Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
+
+        {/* === RIGHT: Cards - Slide In from Right (Staggered) === */}
+        <motion.div 
+          className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.15, // Delay between each card
+              }
+            }
+          }}
+        >
           {whyChooseUs.map((item, i) => {
             const Icon = item.icon;
             return (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
+                variants={{
+                  hidden: { 
+                    x: 80, 
+                    opacity: 0 
+                  },
+                  visible: { 
+                    x: 0, 
+                    opacity: 1,
+                    transition: {
+                      duration: 0.6,
+                      ease: "easeOut"
+                    }
+                  }
+                }}
                 whileHover={{ y: -4, scale: 1.02 }}
                 className="p-5 bg-white/5 border border-white/20 rounded-lg flex items-start gap-3 group backdrop-blur-sm"
               >
@@ -54,7 +78,7 @@ export default function AboutUs() {
               </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

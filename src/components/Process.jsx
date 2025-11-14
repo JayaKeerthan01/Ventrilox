@@ -29,7 +29,7 @@ export default function Process() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-white">
-            Our Process:
+            Our Process
           </h2>
           <p className="text-2xl font-light text-white/80">
             From Signing to Releasing — Every Step, Covered.
