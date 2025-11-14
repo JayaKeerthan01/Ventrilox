@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        inria: ['"Inria Serif"', 'serif'],
       },
       animation: {
         'fade-up': 'fadeUp 0.8s ease-out forwards',

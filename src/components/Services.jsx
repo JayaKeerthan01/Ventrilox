@@ -1,7 +1,7 @@
 // components/Services.js
 import { motion } from 'framer-motion';
-import {  FiCpu, FiCode } from 'react-icons/fi';
-import { FaCloud, FaLaptopCode} from "react-icons/fa";
+import { FiCpu, FiCode } from 'react-icons/fi';
+import { FaCloud, FaLaptopCode } from "react-icons/fa";
 import { RiRobot3Fill } from "react-icons/ri";
 
 const services = [
@@ -48,7 +48,9 @@ const item = {
 export default function Services() {
   return (
     <section id="services" className="py-24 px-6 bg-black">
-      <div className="max-w-6xl mx-auto">
+      {/* WIDER CONTAINER */}
+      <div className="max-w-7xl mx-auto"> {/* Changed from max-w-6xl to max-w-7xl */}
+        
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -60,12 +62,13 @@ export default function Services() {
           <p className="text-2xl mt-2 font-light text-white/80">Our core offerings include.</p>
         </motion.h2>
 
+        {/* WIDER GRID + BETTER GAP */}
         <motion.div
           variants={container}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" // Increased gap-6 → gap-8
         >
           {services.map((s, i) => {
             const Icon = s.icon;
@@ -97,7 +100,7 @@ export default function Services() {
                   {s.desc}
                 </p>
 
-                {/* Optional: subtle background glow on hover */}
+                {/* Subtle hover glow */}
                 <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
               </motion.div>
             );

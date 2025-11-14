@@ -10,7 +10,7 @@ export default function Navbar() {
     >
       <h1 className="text-2xl font-bold tracking-tight">
         <span className="text-white"></span>
-        <span className="text-gray-400">V E N T R I L O X</span>
+        <span className="text-white font-inria">V E N T R I L O X</span>
       </h1>
     </motion.div>
   );
