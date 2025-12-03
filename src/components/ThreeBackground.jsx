@@ -1,8 +1,7 @@
 // components/ThreeBackground.jsx
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Float, MeshDistortMaterial, Environment } from '@react-three/drei'
-import { useRef } from 'react'
-import { Mesh } from 'three'
+
 
 export default function ThreeBackground() {
   return (
