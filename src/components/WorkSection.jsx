@@ -1,6 +1,8 @@
 import React from "react"
 import gymImg from "../assests/images/gym.png";
 import cottageImg from "../assests/images/cottage.png";
+import CoffeeImg from "../assests/images/coffee.png";
+
 
 const projects = [
   {
@@ -12,8 +14,8 @@ const projects = [
   {
     title: "Coffee Website",
     desc: "An elegant and modern coffee brand website featuring a rich product catalog, detailed descriptions, and an integrated online ordering system for coffee lovers worldwide.",
-    link: "https://your-coffee-link.com",
-    img: "jsdhjshd",
+    link: "https://coffee-house-plum.vercel.app/",
+    img: CoffeeImg,
   },
   {
     title: "Alpha Gym",
