@@ -1,7 +1,7 @@
 import React from "react"
 import gymImg from "../assests/images/gym.png";
 import cottageImg from "../assests/images/cottage.png";
-import CoffeeImg from "../assests/images/coffee.png";
+import CoffeeImg from "../assests/images/Coffee.png";
 
 
 const projects = [
