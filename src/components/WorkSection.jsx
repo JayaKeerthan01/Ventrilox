@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Alpha Gym",
     desc: "A dynamic fitness website offering membership plans, workout schedules, and personalized training programs. Built with a sleek design to motivate and engage fitness enthusiasts.",
-    link: "https://gymsite-pied.vercel.app/",
+    link: "https://alphagym2.netlify.app/",
     img: gymImg,
   },
 ];
