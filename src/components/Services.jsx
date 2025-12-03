@@ -1,8 +1,8 @@
 // components/Services.js
 import { motion } from 'framer-motion';
-import { FiCpu, FiCode } from 'react-icons/fi';
 import { FaCloud, FaLaptopCode } from "react-icons/fa";
 import { RiRobot3Fill } from "react-icons/ri";
+import { FiCode, FiServer, FiTrendingUp } from "react-icons/fi";
 
 const services = [
   {
@@ -10,6 +10,13 @@ const services = [
     desc: "We build lightning-fast, responsive web and mobile apps that look stunning on every device. From sleek landing pages to powerful native apps designed to engage users and drive results.",
     icon: FaLaptopCode,
   },
+  
+{
+  title: "API Development",
+  desc: "Seamless integrations start here. We design and build secure, scalable APIs that connect your apps, services, and data — enabling smooth communication and future-ready architecture.",
+  icon: FiServer, // You can use an appropriate icon like FiServer or FiCloud
+},
+
   {
     title: "Cloud Engineering",
     desc: "Your app deserves a bulletproof backend. We architect, deploy, and optimize cloud systems (AWS, Azure) that scale seamlessly, cut costs, and never sleep.",
@@ -20,11 +27,12 @@ const services = [
     desc: "Automate repetitive tasks, predict user behavior, and boost efficiency with custom AI. Chatbots, predictive analytics, workflow automation — we make your business run itself.",
     icon: RiRobot3Fill,
   },
-  {
-    title: "Custom Software Development",
-    desc: "Off-the-shelf doesn’t cut it. We craft bespoke tools, CRMs, ERPs, and platforms built exactly for your workflow — secure, scalable, and future-proof.",
-    icon: FiCode,
-  },
+  
+// {
+//   title: "Digital Marketing",
+//   desc: "Boost your brand’s visibility and engagement. From SEO and social media to targeted campaigns, we craft strategies that drive traffic, conversions, and measurable growth.",
+//   icon: FiTrendingUp, // Use an icon like FiTrendingUp or FiBarChart
+// },
 ];
 
 // Stagger container
@@ -47,7 +55,7 @@ const item = {
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-6 bg-black">
+    <section id="services" className="py-12 px-6 bg-black">
       {/* WIDER CONTAINER */}
       <div className="max-w-7xl mx-auto"> {/* Changed from max-w-6xl to max-w-7xl */}
         
