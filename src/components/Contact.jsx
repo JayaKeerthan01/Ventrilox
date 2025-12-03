@@ -91,7 +91,7 @@ export default function Contact() {
             >
               {/* Brand */}
               <div>
-                <h1 className="text-5xl font-inria md:text-6xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                <h1 className="lg:text-6xl font-inria md:text-4xl font-bold bg-black bg-clip-text text-white">
                   V E N T R I L O X
                 </h1>
                 <h2 className="text-2xl md:text-3xl font-medium text-gray-300 mt-2">
@@ -114,6 +114,7 @@ export default function Contact() {
                   <div>
                     <p className="text-gray-400 text-sm">Phone</p>
                     <p className="font-medium group-hover:text-white transition">+91 99414 37386</p>
+                    <p className="font-medium group-hover:text-white transition">+91 76958 75191</p>
                   </div>
                 </motion.a>
 
@@ -163,7 +164,7 @@ export default function Contact() {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               className="bg-gray-900/50 backdrop-blur-sm p-8 md:p-10 rounded-2xl shadow-2xl border border-gray-800"
             >
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+              <h3 className="text-2xl md:text-1xl font-bold text-white mb-8 text-center bg-transparent bg-clip-text text-white">
                 Ready to 10x your business???
               </h3>
 
