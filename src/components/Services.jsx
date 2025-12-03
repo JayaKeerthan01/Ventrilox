@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { FaCloud, FaLaptopCode } from "react-icons/fa";
 import { RiRobot3Fill } from "react-icons/ri";
-import { FiCode, FiServer, FiTrendingUp } from "react-icons/fi";
+import { FiServer } from "react-icons/fi";
 
 const services = [
   {
